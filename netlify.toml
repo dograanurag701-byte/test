@@ -1,0 +1,8 @@
+## Netlify configuration for Next.js
+# Leave `publish` unset so the Netlify Next plugin controls it.
+[build]
+  command = "npm run build"
+  functions = "netlify/functions"
+
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
